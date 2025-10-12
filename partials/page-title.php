@@ -8,7 +8,8 @@
                         href="javascript: void(0);"><?= htmlspecialchars($title ?? 'PAMSIMAS', ENT_QUOTES, 'UTF-8') ?></a>
                 </li>
                 <li class="breadcrumb-item active">
-                    <?= htmlspecialchars($subTitle ?? 'Default Sub Title', ENT_QUOTES, 'UTF-8') ?></li>
+                    <?= htmlspecialchars($subTitle ?? 'PAMSIMAS', ENT_QUOTES, 'UTF-8') ?>
+                </li>
             </ol>
         </div>
     </div>
