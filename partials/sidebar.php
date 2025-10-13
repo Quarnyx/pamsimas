@@ -37,7 +37,7 @@
                </li>
 
                <li class="nav-item">
-                    <a class="nav-link" href="#sidebarAuthentication">
+                    <a class="nav-link" href="?page=data-pelanggan">
                          <span class="nav-icon">
                               <iconify-icon icon="solar:people-nearby-broken"></iconify-icon>
                          </span>
