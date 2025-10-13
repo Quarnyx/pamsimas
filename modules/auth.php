@@ -23,10 +23,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             header('Location: ../app.php');
         } else {
-            header("location:../login.php?error=invalid");
+            header("location:../login.php?error=Password salah");
         }
     } else {
-        header("location:../login.php?error=username not found");
+        header("location:../login.php?error=Username tidak ditemukan");
     }
 
     $stmt->close();

@@ -3,6 +3,7 @@
 
 <head>
     <?php
+    session_start();
     include __DIR__ . '/partials/title-meta.php';
     include __DIR__ . '/partials/head-css.php';
     ?>
