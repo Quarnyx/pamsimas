@@ -65,10 +65,10 @@
                     <div class="collapse" id="sidebarError">
                          <ul class="nav sub-navbar-nav">
                               <li class="sub-nav-item">
-                                   <a class="sub-nav-link" href="pages-404.html">Tarif Kategori</a>
+                                   <a class="sub-nav-link" href="?page=data-kategori">Kategori Pelanggan</a>
                               </li>
                               <li class="sub-nav-item">
-                                   <a class="sub-nav-link" href="pages-404-alt.html">Beban Kategori</a>
+                                   <a class="sub-nav-link" href="?page=data-tarif">Tarif Kategori</a>
                               </li>
                          </ul>
                     </div>
