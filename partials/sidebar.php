@@ -46,7 +46,7 @@
                </li>
 
                <li class="nav-item">
-                    <a class="nav-link" href="#sidebarAuthentication">
+                    <a class="nav-link" href="?page=data-wilayah">
                          <span class="nav-icon">
                               <iconify-icon icon="solar:align-horizonta-spacing-broken"></iconify-icon>
                          </span>
