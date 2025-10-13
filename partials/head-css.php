@@ -1,10 +1,20 @@
 <!-- Google Font Family link -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 
 <!-- Vendor css -->
 <link href="assets/css/vendor.min.css" rel="stylesheet" type="text/css" />
+<link href="DataTables/datatables.min.css" rel="stylesheet">
+
+<script src="DataTables/datatables.min.js"></script>
+<!-- alertifyjs Css -->
+<link href="assets/js/alertifyjs/build/css/alertify.min.css" rel="stylesheet" type="text/css" />
+
+<!-- alertifyjs default themes  Css -->
+<link href="assets/js/alertifyjs/build/css/themes/default.min.css" rel="stylesheet" type="text/css" />
 
 <!-- Icons css -->
 <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />

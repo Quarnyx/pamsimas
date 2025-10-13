@@ -19,7 +19,7 @@
                <li class="menu-title">Menu Utama</li>
 
                <li class="nav-item">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link" href="?page=dashboard">
                          <span class="nav-icon">
                               <iconify-icon icon="solar:widget-2-outline"></iconify-icon>
                          </span>
@@ -28,7 +28,7 @@
                </li>
 
                <li class="nav-item">
-                    <a class="nav-link" href="#sidebarAuthentication">
+                    <a class="nav-link" href="?page=data-pengguna">
                          <span class="nav-icon">
                               <iconify-icon icon="solar:user-circle-outline"></iconify-icon>
                          </span>

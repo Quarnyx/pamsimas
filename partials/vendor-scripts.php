@@ -3,3 +3,4 @@
 
 <!-- App Javascript -->
 <script src="assets/js/app.js"></script>
+<script src="assets/js/alertifyjs/build/alertify.min.js"></script>
