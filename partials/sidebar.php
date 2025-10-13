@@ -73,6 +73,14 @@
                          </ul>
                     </div>
                </li>
+               <li class="nav-item">
+                    <a class="nav-link" href="?page=jenis-pengeluaran">
+                         <span class="nav-icon">
+                              <iconify-icon icon="solar:align-horizonta-spacing-broken"></iconify-icon>
+                         </span>
+                         <span class="nav-text"> Jenis Pengeluaran </span>
+                    </a>
+               </li>
 
                <li class="menu-title">Transaksi</li>
 
