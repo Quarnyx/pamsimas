@@ -103,12 +103,23 @@
                </li>
 
                <li class="nav-item">
-                    <a class="nav-link" href="charts.html">
+                    <a class="nav-link menu-arrow" href="#rekamMeter" data-bs-toggle="collapse" role="button"
+                         aria-expanded="false" aria-controls="rekamMeter">
                          <span class="nav-icon">
                               <iconify-icon icon="solar:camera-add-broken"></iconify-icon>
                          </span>
-                         <span class="nav-text"> Rekam Meter </span>
+                         <span class="nav-text"> Rekam Meter</span>
                     </a>
+                    <div class="collapse" id="rekamMeter">
+                         <ul class="nav sub-navbar-nav">
+                              <li class="sub-nav-item">
+                                   <a class="sub-nav-link" href="?page=rekam-meter">Rekam Meter</a>
+                              </li>
+                              <li class="sub-nav-item">
+                                   <a class="sub-nav-link" href="?page=daftar-rekam-meter">Daftar Rekam Meter</a>
+                              </li>
+                         </ul>
+                    </div>
                </li>
 
                <li class="menu-title">Laporan</li>

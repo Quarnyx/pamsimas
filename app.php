@@ -59,8 +59,6 @@
     <script src="assets/vendor/jsvectormap/maps/world-merc.js"></script>
     <script src="assets/vendor/jsvectormap/maps/world.js"></script>
 
-    <!-- Dashboard Js -->
-    <script src="assets/js/pages/dashboard.js"></script>
 
 </body>
 

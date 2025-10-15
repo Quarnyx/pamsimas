@@ -39,7 +39,7 @@
 
                               <div class="dropdown-divider my-1"></div>
 
-                              <a class="dropdown-item text-danger" href="auth-signin.html">
+                              <a class="dropdown-item text-danger" href="logout.php">
                                    <iconify-icon icon="solar:logout-3-outline"
                                         class="align-middle me-2 fs-18"></iconify-icon><span
                                         class="align-middle">Logout</span>

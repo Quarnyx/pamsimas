@@ -24,3 +24,86 @@
 
 <!-- Theme Config js -->
 <script src="assets/js/config.js"></script>
+<style>
+    .search-results {
+        position: absolute;
+        width: 100%;
+        max-height: 250px;
+        overflow-y: auto;
+        background: white;
+        border: 1px solid #dee2e6;
+        border-top: none;
+        border-radius: 0 0 0.375rem 0.375rem;
+        display: none;
+        z-index: 1050;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    .search-results.show {
+        display: block;
+    }
+
+    .search-item {
+        padding: 12px 15px;
+        cursor: pointer;
+        border-bottom: 1px solid #f0f0f0;
+        transition: background 0.2s;
+    }
+
+    .search-item:hover {
+        background: #f8f9fa;
+    }
+
+    .search-item:last-child {
+        border-bottom: none;
+    }
+
+    .meter-display {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 25px;
+        border-radius: 0.5rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .meter-display .display-label {
+        font-size: 0.875rem;
+        opacity: 0.9;
+        margin-bottom: 5px;
+    }
+
+    .meter-display .display-value {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .meter-display .display-unit {
+        font-size: 0.875rem;
+        opacity: 0.9;
+        margin-top: 5px;
+    }
+
+    .pemakaian-display {
+        background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    }
+
+    .preview-image {
+        max-width: 100%;
+        max-height: 300px;
+        border-radius: 0.5rem;
+        margin-top: 15px;
+    }
+
+    .loading-spinner {
+        text-align: center;
+        padding: 15px;
+    }
+
+    @media (max-width: 768px) {
+        .meter-display .display-value {
+            font-size: 2rem;
+        }
+    }
+</style>
