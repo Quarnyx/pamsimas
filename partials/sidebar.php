@@ -94,7 +94,7 @@
                </li>
 
                <li class="nav-item">
-                    <a class="nav-link" href="charts.html">
+                    <a class="nav-link" href="?page=pengeluaran">
                          <span class="nav-icon">
                               <iconify-icon icon="solar:export-broken"></iconify-icon>
                          </span>
