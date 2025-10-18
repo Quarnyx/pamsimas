@@ -280,56 +280,41 @@ switch ($_GET['aksi'] ?? '') {
  */
 function hitungTarifBertingkat($conn, $kategori_id, $pemakaian)
 {
-    // Ambil data tarif bertingkat untuk kategori ini
-    $sqlTarif = "SELECT * FROM tarif_bertingkat 
-                 WHERE kategori_id = ? 
-                 ORDER BY tingkat ASC";
+    // nilai pemakaian minimal 0
+    $pemakaian = max(0, (int) $pemakaian);
 
+    // Ambil data tarif per tingkat (urut dari batas bawah/tingkat terendah)
+    $sqlTarif = "SELECT tingkat, batas_bawah, batas_atas, harga_per_m3
+                 FROM tarif_bertingkat
+                 WHERE kategori_id = ?
+                 ORDER BY batas_bawah ASC";
     $stmt = $conn->prepare($sqlTarif);
     $stmt->bind_param("i", $kategori_id);
     $stmt->execute();
     $result = $stmt->get_result();
 
-    $tarif_list = [];
-    while ($row = $result->fetch_assoc()) {
-        $tarif_list[] = $row;
-    }
-    $stmt->close();
-
-    if (empty($tarif_list)) {
-        // Jika tidak ada tarif bertingkat, return 0
-        return 0;
-    }
-
+    // Default jika tidak ada tarif yang cocok
     $total_biaya = 0;
-    $sisa_pemakaian = $pemakaian;
 
-    // Hitung biaya per tingkat
-    foreach ($tarif_list as $tarif) {
-        if ($sisa_pemakaian <= 0) {
+    while ($row = $result->fetch_assoc()) {
+        $batas_bawah = (int) $row['batas_bawah'];
+        // Jika batas_atas null/0/empty → anggap tak terbatas
+        $batas_atas = ($row['batas_atas'] === null || $row['batas_atas'] === '')
+            ? PHP_INT_MAX
+            : (int) $row['batas_atas'];
+        $harga_per_m3 = (float) $row['harga_per_m3'];
+
+        // Cek apakah pemakaian berada di dalam rentang tingkat ini (inklusif)
+        if ($pemakaian >= $batas_bawah && $pemakaian <= $batas_atas) {
+            $total_biaya = $pemakaian * $harga_per_m3;
             break;
         }
-
-        $batas_bawah = $tarif['batas_bawah'];
-        $batas_atas = $tarif['batas_atas'] ? $tarif['batas_atas'] : PHP_INT_MAX;
-        $harga_per_m3 = $tarif['harga_per_m3'];
-
-        // Hitung range untuk tingkat ini
-        $range = $batas_atas - $batas_bawah + 1;
-
-        // Pemakaian yang akan dihitung di tingkat ini
-        $pemakaian_tingkat = min($sisa_pemakaian, $range);
-
-        // Hitung biaya untuk tingkat ini
-        $biaya_tingkat = $pemakaian_tingkat * $harga_per_m3;
-        $total_biaya += $biaya_tingkat;
-
-        // Kurangi sisa pemakaian
-        $sisa_pemakaian -= $pemakaian_tingkat;
     }
 
+    $stmt->close();
     return $total_biaya;
 }
+
 
 /**
  * Fungsi untuk generate nomor tagihan otomatis

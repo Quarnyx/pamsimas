@@ -85,7 +85,7 @@
                <li class="menu-title">Transaksi</li>
 
                <li class="nav-item">
-                    <a class="nav-link" href="charts.html">
+                    <a class="nav-link" href="?page=pembayaran-tagihan">
                          <span class="nav-icon">
                               <iconify-icon icon="solar:cash-out-line-duotone"></iconify-icon>
                          </span>
