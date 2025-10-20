@@ -125,7 +125,7 @@
                <li class="menu-title">Laporan</li>
 
                <li class="nav-item">
-                    <a class="nav-link" href="charts.html">
+                    <a class="nav-link" href="?page=laporan-pemasukan">
                          <span class="nav-icon">
                               <iconify-icon icon="solar:chart-2-broken"></iconify-icon>
                          </span>
@@ -134,7 +134,7 @@
                </li>
 
                <li class="nav-item">
-                    <a class="nav-link" href="charts.html">
+                    <a class="nav-link" href="?page=laporan-pengeluaran">
                          <span class="nav-icon">
                               <iconify-icon icon="solar:chart-2-broken"></iconify-icon>
                          </span>
@@ -142,7 +142,7 @@
                     </a>
                </li>
                <li class="nav-item">
-                    <a class="nav-link" href="charts.html">
+                    <a class="nav-link" href="?page=laporan-arus-kas">
                          <span class="nav-icon">
                               <iconify-icon icon="solar:chart-2-broken"></iconify-icon>
                          </span>

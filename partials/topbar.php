@@ -1,4 +1,4 @@
-<header class="app-topbar">
+<header class="app-topbar d-print-none">
      <div class="container-fluid">
           <div class="navbar-header">
                <div class="d-flex align-items-center gap-2">
