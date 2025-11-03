@@ -1,7 +1,9 @@
 <?php
 
 if (isset($_GET['page'])) {
-    include 'pages/' . $_GET['page'] . '/index.php';
-} else {
-    include 'pages/dashboard.php';
+    if ($_GET['page'] === 'dashboard') {
+        include 'pages/dashboard.php';
+    } else {
+        include 'pages/' . $_GET['page'] . '/index.php';
+    }
 }

@@ -23,7 +23,7 @@
                     <li class="menu-title">Menu Utama</li>
 
                     <li class="nav-item">
-                         <a class="nav-link" href="?dashboard">
+                         <a class="nav-link" href="?page=dashboard">
                               <span class="nav-icon">
                                    <iconify-icon icon="solar:widget-2-outline"></iconify-icon>
                               </span>
@@ -166,7 +166,7 @@
                     <li class="menu-title">Menu Utama</li>
 
                     <li class="nav-item">
-                         <a class="nav-link" href="?dashboard">
+                         <a class="nav-link" href="?page=dashboard">
                               <span class="nav-icon">
                                    <iconify-icon icon="solar:widget-2-outline"></iconify-icon>
                               </span>
@@ -214,7 +214,7 @@
                     <li class="menu-title">Menu Utama</li>
 
                     <li class="nav-item">
-                         <a class="nav-link" href="?dashboard">
+                         <a class="nav-link" href="?page=dashboard">
                               <span class="nav-icon">
                                    <iconify-icon icon="solar:widget-2-outline"></iconify-icon>
                               </span>
@@ -274,7 +274,7 @@
                     <li class="menu-title">Menu Utama</li>
 
                     <li class="nav-item">
-                         <a class="nav-link" href="?dashboard">
+                         <a class="nav-link" href="?page=dashboard">
                               <span class="nav-icon">
                                    <iconify-icon icon="solar:widget-2-outline"></iconify-icon>
                               </span>
@@ -312,3 +312,10 @@
           ?>
      </div>
 </div>
+
+
+<!-- Vendor Javascript -->
+<script src="assets/js/vendor.min.js"></script>
+
+<!-- App Javascript -->
+<script src="assets/js/app.js"></script>

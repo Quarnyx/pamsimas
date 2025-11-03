@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['role'] = $user['role'];
             $_SESSION['user_id'] = $user['id'];
 
-            header('Location: ../app.php');
+            header('Location: ../app.php?page=dashboard');
         } else {
             header("location:../login.php?error=Password salah");
         }
